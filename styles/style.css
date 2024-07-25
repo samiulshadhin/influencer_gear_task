@@ -6,3 +6,30 @@
     font-family: "Poppins", sans-serif;
 }
 
+/* header section styles */
+header{
+    display: flex;
+    justify-content: space-between;
+    margin: 70px 100px;
+    align-items: center;
+}
+
+.header-main-title{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #3A3A3A;
+}
+
+.header-menu-section{
+    display: flex;
+    gap: 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    align-items: center;
+    color: #3A3A3A;
+}
+
+.header-menu-section i{
+    font-size: 1.3rem;
+}
+
