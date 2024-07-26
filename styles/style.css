@@ -82,3 +82,83 @@
     margin-top: 30px;
     transform: translateX(-100px), translateY(-40px);
 }
+
+/* companies logo section */
+.companies-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 90px;
+    margin-top: 60px;
+}
+
+/* Popular Collection Section */
+.popular-collection-section{
+    
+}
+
+.popular-collection-head{
+    text-align: center;
+    font-size: 1.56rem;
+    font-weight: 600;
+    color: #3A3A3A;
+    margin-bottom: 30px;
+}
+
+.all-products-collection{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 30px;
+    column-gap: 0px;
+}
+
+.product-details{
+    background-color: #FFFFFF;
+    padding: 15px;
+    width: 300px;
+    height: 450px;
+    border-radius: 5px;
+    border: none;
+}
+
+.product-title{
+    margin-top: 12px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #18191F;
+    margin-bottom: 4px;
+}
+
+.product-price{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.87);
+    margin-bottom: 4px;
+}
+
+.rating-by-number{
+    font-size: 1rem;
+    font-weight: 600;
+    color: #5E6366;
+}
+
+.product-description{
+    margin-top: 5px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #787885;
+}
+
+.checked {
+    color: orange;
+    font-size: 0.7rem;
+  }
+
+.product-1{
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+
+}
