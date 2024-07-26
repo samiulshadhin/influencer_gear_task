@@ -44,8 +44,6 @@
     padding: 0px 100px;
 }
 
-.header-content-texts {}
-
 .header-main-title {
     font-size: 3rem;
     font-weight: bold;
@@ -72,8 +70,6 @@
     margin-bottom: 150px;
 }
 
-.header-main-img-section {}
-
 .header-main-img {
     background-image: url(../images/Circle\ design.svg);
     background-repeat: no-repeat;
@@ -95,9 +91,11 @@
 
 /* Popular Collection Section */
 .popular-collection-section{
-    
+    width: 80%;
+    margin: 0px auto;
+    margin-bottom: 50px;
+    margin-right: 105px;
 }
-
 .popular-collection-head{
     text-align: center;
     font-size: 1.56rem;
@@ -109,17 +107,22 @@
 .all-products-collection{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    row-gap: 30px;
+    gap: 30px;
     column-gap: 0px;
 }
 
 .product-details{
     background-color: #FFFFFF;
     padding: 15px;
-    width: 300px;
-    height: 450px;
+    width: 260px;
+    height: 415px;
     border-radius: 5px;
     border: none;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+}
+
+.product-details img{
+    width: 100%;
 }
 
 .product-title{
@@ -155,10 +158,134 @@
     font-size: 0.7rem;
   }
 
-.product-1{
-    background-color: #FFFFFF;
-    border-radius: 5px;
-    border: none;
-    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+.see-more-arrow{
+    text-align: right;
+    color: rgba(224, 44, 109, 0.87);
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 50px;
+    cursor: pointer;
+    padding-right: 47px;
+  }
 
+
+
+
+
+
+
+  @media screen and (max-width: 576px) {
+
+    /* header-upper-line styles */
+.header-upper-line {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 30px;
 }
+
+.header-upper-title {
+    font-size: 0.92rem;
+    font-weight: bold;
+    color: #3A3A3A;
+    text-align: center;
+}
+
+.header-upper-menu {
+    display: flex;
+    gap: 30px;
+    font-size: 0.6rem;
+    font-weight: 600;
+    align-items: center;
+    color: #3A3A3A;
+}
+
+.header-upper-menu i {
+    font-size: 1rem;
+}
+
+
+/* header-main-content styles start */
+.header-main-content {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0px 30px;
+}
+
+.header-main-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #3A3A3A;
+    margin-top: 0px;
+    text-align: center;
+}
+
+.header-main-description {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #3A3A3A;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.header-main-button {
+    background-color: #E02C6D;
+    border: none;
+    border-radius: 40px;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px 28px;
+    margin: 0;
+}
+
+.header-main-img {
+    background-image: url(../images/Circle\ design.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px;
+    transform: translateX(-100px), translateY(-40px);
+}
+
+/* companies logo section */
+.companies-section{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-bottom: 90px;
+    margin-top: 60px;
+}
+
+/* Popular Collection Section */
+.popular-collection-section{
+    width: 90%;
+    margin: 0px auto;
+    margin-bottom: 50px;
+    margin-left: 34px;
+}
+.popular-collection-head{
+    text-align: center;
+    font-size: 1.56rem;
+    font-weight: 600;
+    color: #3A3A3A;
+    margin-bottom: 30px;
+    margin-right: 35px;
+}
+
+.all-products-collection{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    column-gap: 0px;
+}
+
+.see-more-arrow{
+    text-align: right;
+    color: rgba(224, 44, 109, 0.87);
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 30px;
+    cursor: pointer;
+    padding-right: 35px;
+  }
+
+  }
