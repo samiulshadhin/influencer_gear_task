@@ -38,11 +38,14 @@
 }
 
 
+
 /* header-main-content styles start */
 .header-main-content {
     display: flex;
-    gap: 120px;
-    padding: 0px 100px;
+    justify-content: space-between;
+    gap: 100px;
+    margin: 0px auto;
+    width: 85%;
 }
 
 .header-main-title {
@@ -57,7 +60,7 @@
     font-size: 1rem;
     font-weight: 600;
     color: #3A3A3A;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
 }
 
 .header-main-button {
@@ -68,65 +71,74 @@
     font-size: 1rem;
     font-weight: bold;
     padding: 10px 28px;
-    margin-bottom: 150px;
+    margin-bottom: 120px;
     cursor: pointer;
 }
 
-.header-main-img {
+.header-main-img-section {
     background-image: url(../images/Circle\ design.svg);
     background-repeat: no-repeat;
-    background-size: cover;
-    margin-top: 30px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-main-img {
+    margin: 0px auto;
+    width: 80%;
 }
 
 /* companies logo section */
-.companies-section{
+.companies-section {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 50px;
+    margin: 50px auto;
+    padding: 30px 0px;
+    width: 80%;
+    border-style: solid;
+    border-image: linear-gradient(to right, rgba(192, 204, 218, 0.1), rgba(192, 204, 218, 0.6), rgba(192, 204, 218, 0.1)) 100% 0 100% 0/1.5px 0 1.5px 0 stretch;
     margin-bottom: 90px;
-    margin-top: 60px;
 }
 
+
+
 /* Popular Collection Section */
-.popular-collection-section{
-    width: 80%;
+.popular-collection-section {
+    width: 75%;
     margin: 0px auto;
-    margin-bottom: 50px;
-    margin-right: 105px;
 }
-.popular-collection-head{
+
+.popular-collection-head {
     text-align: center;
     font-size: 1.56rem;
     font-weight: 600;
     color: #3A3A3A;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
-.all-products-collection{
+.all-products-collection {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
-    column-gap: 0px;
 }
 
-.product-details{
+.product-details {
     background-color: #FFFFFF;
     padding: 15px;
-    width: 260px;
-    height: 415px;
     border-radius: 5px;
     border: none;
     box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
     cursor: pointer;
 }
 
-.product-details img{
+.product-details img {
     width: 100%;
 }
 
-.product-title{
+.product-title {
     margin-top: 12px;
     font-size: 1.5rem;
     font-weight: 500;
@@ -134,20 +146,20 @@
     margin-bottom: 4px;
 }
 
-.product-price{
+.product-price {
     font-size: 1.5rem;
     font-weight: 400;
     color: rgba(0, 0, 0, 0.87);
     margin-bottom: 4px;
 }
 
-.rating-by-number{
+.rating-by-number {
     font-size: 1rem;
     font-weight: 600;
     color: #5E6366;
 }
 
-.product-description{
+.product-description {
     margin-top: 5px;
     font-size: 0.9rem;
     font-weight: 600;
@@ -157,47 +169,42 @@
 .checked {
     color: orange;
     font-size: 0.7rem;
-  }
+}
 
-.see-more-arrow{
+.see-more-arrow {
     text-align: right;
     color: rgba(224, 44, 109, 0.87);
     font-size: 1rem;
     font-weight: bold;
     margin-top: 50px;
     cursor: pointer;
-    padding-right: 47px;
-  }
+}
 
 
 /* Featured Product section style */
-.featured-product-section{
+.featured-product-section {
     display: flex;
+    justify-content: center;
     gap: 90px;
-    padding: 0 125px;
-    margin: 90px 0px;
+    margin: 90px auto;
     align-items: center;
+    width: 80%;
 }
 
-.featured-product-img{
-    /* width: 100%;
-    height: 100%; */
-}
-
-.featured-product-title{
+.featured-product-title {
     font-size: 2rem;
     font-weight: bold;
     color: #0A0826;
 }
 
-.featured-product-description{
+.featured-product-description {
     font-size: 0.90rem;
     font-weight: bold;
     color: #6C6C6C;
     margin: 15px 0px;
 }
 
-.join-now-button{
+.join-now-button {
     background-color: #E02C6D;
     border: none;
     color: white;
@@ -209,20 +216,20 @@
 
 
 /* Footer Styles */
-footer{
+footer {
     background-color: #0A0826;
     text-align: center;
     padding: 50px 0px;
 }
 
-.footer-title{
+.footer-title {
     color: #FFFFFF;
     font-size: 1.30rem;
     font-weight: bold;
     margin-bottom: 5px;
 }
 
-.footer-description{
+.footer-description {
     color: #D9DBE1;
     font-size: 0.8rem;
     font-weight: 500;
@@ -230,7 +237,7 @@ footer{
 }
 
 /* Footer Icon Section Styles */
-.footer-icon{
+.footer-icon {
     color: #FFFFFF;
     background-color: #22213C;
     border-radius: 50%;
@@ -241,6 +248,14 @@ footer{
 }
 
 
+/* Mouse Hover Styles */
+.pink-color-hover:hover {
+    color: #E02C6D;
+}
+
+.button-hover:hover {
+    background-color: #a52051;
+}
 
 
 
@@ -248,8 +263,6 @@ footer{
 
 
 
-
-
-  @media screen and (max-width: 576px) {
-
-  }
+@media screen and (max-width: 576px) {
+    
+}
