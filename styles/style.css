@@ -39,8 +39,7 @@
 /* header-main-content styles start */
 .header-main-content {
     display: flex;
-    justify-content: space-between;
-    gap: 130px;
+    gap: 120px;
     padding: 0px 100px;
 }
 
@@ -73,10 +72,8 @@
 .header-main-img {
     background-image: url(../images/Circle\ design.svg);
     background-repeat: no-repeat;
-    height: 100%;
-    width: 100%;
+    background-size: cover;
     margin-top: 30px;
-    transform: translateX(-100px), translateY(-40px);
 }
 
 /* companies logo section */
