@@ -215,6 +215,7 @@
 }
 
 
+
 /* Footer Styles */
 footer {
     background-color: #0A0826;
@@ -264,5 +265,153 @@ footer {
 
 
 @media screen and (max-width: 576px) {
+
+    /* header-upper-line styles */
+    .header-upper-line {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0px;
+    }
     
+    .header-upper-title {
+        font-size: 1.72rem;
+        font-weight: bold;
+        color: #E02C6D;
+        cursor: pointer;
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 25px;
+    }
+    
+    .header-upper-menu {
+        display: flex;
+        gap: 22px;
+        font-size: 0.8rem;
+        font-weight: 600;
+        align-items: center;
+        color: #3A3A3A;
+        cursor: pointer;
+        margin-bottom: 50px;
+    }
+    
+    .header-upper-menu i {
+        font-size: 0.9rem;
+    }
+
+
+
+
+    /* header-main-content styles start */
+.header-main-content {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 85%;
+    text-align: center;
+    gap: 20px;
+}
+
+.header-main-title {
+    font-size: 1.9rem;
+    font-weight: bold;
+    color: #3A3A3A;
+    margin: 0px;
+    margin-bottom: 10px;
+}
+
+.header-main-description {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #3A3A3A;
+    margin-bottom: 25px;
+}
+
+.header-main-button {
+    background-color: #E02C6D;
+    border: none;
+    border-radius: 40px;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+
+.header-main-img-section {
+    background-image: url(../images/Circle\ design.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 85%;
+    height: 307px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+
+}
+
+.header-main-img {
+    margin: auto;
+    width: 80%;
+}
+
+
+
+/* companies logo section */
+.companies-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 10px auto;
+    width: 85%;
+    border-style: solid;
+    border-image: linear-gradient(to right, rgba(192, 204, 218, 0.1), rgba(192, 204, 218, 0.6), rgba(192, 204, 218, 0.1)) 100% 0 100% 0/1.5px 0 1.5px 0 stretch;
+    margin-bottom: 50px;
+}
+
+.companies-section img{
+    width: 16%;
+}
+
+
+
+/* Popular Collection Section */
+.popular-collection-section {
+    width: 85%;
+    margin: 0px auto;
+}
+
+.all-products-collection {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+}
+
+.see-more-arrow {
+    text-align: right;
+    color: rgba(224, 44, 109, 0.87);
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+
+/* Featured Product section style */
+.featured-product-section {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    gap: 50px;
+    margin: 60px auto;
+    align-items: center;
+    width: 80%;
+}
+
+.featured-product-img{
+    width: 100%;
+}
 }
